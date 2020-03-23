@@ -1,10 +1,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Umna Registration Form of School </title>
+<title>Umna Registration  </title>
 </head>
 <body>
-<h1>Umna Register Form</h1>
+<h1>Umna Register Form awards </h1>
 <form action="Umna's register" method="post">
 			<table style="with: 50%">
 				<tr>
