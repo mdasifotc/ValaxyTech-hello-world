@@ -5,7 +5,7 @@
 </head>
 <body>
 <h1>Umna Register Form</h1>
-<form action="Umna_register" method="post">
+<form action="Umna's register" method="post">
 			<table style="with: 50%">
 				<tr>
 					<td>First Name</td>
