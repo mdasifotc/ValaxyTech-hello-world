@@ -1,4 +1,5 @@
-
+<%@ page language="java"%>
+<%@ page import="java.lang.*"%>
 <html>
 <body>
 <H1><center>Result for <%=request.getParameter("a1")%></center></H1>
