@@ -4,6 +4,7 @@
 <title>Guru current Date</title>
 </head>
 <body>
+	Hello Umna 
 Today's date: <%= (new java.util.Date()).toLocaleString()%>
 </body>
 </html>
