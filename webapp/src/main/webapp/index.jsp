@@ -1,7 +1,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
-<title>Umna Registration Form</title>
+<title>Umna Registration Form of School </title>
 </head>
 <body>
 <h1>Umna Register Form</h1>
