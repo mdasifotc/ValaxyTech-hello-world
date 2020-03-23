@@ -1,9 +1,9 @@
 <html>
-	<head>
-		<title>Simple JSP Application</title>
-	</head>
-	<body>
-		<h1>Hello world!</h1>
-		<h2>Current time is <%= LocalDateTime.now() %></h2>
-	</body>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Guru current Date</title>
+</head>
+<body>
+Today's date: <%= (new java.util.Date()).toLocaleString()%>
+</body>
 </html>
