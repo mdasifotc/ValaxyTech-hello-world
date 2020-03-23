@@ -1,44 +1,20 @@
+
 <html>
-<head><title>Localized Dates</title></head>
-<body bgcolor="white">
-<jsp:useBean id="locales" scope="application"
-    class="mypkg.MyLocales"/>
+<body>
+<H1><center>Result for <%=request.getParameter("a1")%></center></H1>
+<%
+int i=Integer.parseInt(request.getParameter("t1"));
+int j=Integer.parseInt(request.getParameter("t2"));
+int k=0;
+String str=request.getParameter("a1");
 
-<form name="localeForm" action="index.jsp" method="post">
-<c:set var="selectedLocaleString" value="${param.locale}" />
-<c:set var="selectedFlag"
-     value="${!empty selectedLocaleString}" />
-<b>Locale:</b>
-<select name=locale>
-<c:forEach var="localeString" items="${locales.localeNames}" >
-<c:choose>
-    <c:when test="${selectedFlag}">
-        <c:choose>
-            <c:when
-                 test="${f:equals(selectedLocaleString, localeString)}" >
-                <option selected>${localeString}</option>
-            </c:when>
-            <c:otherwise>
-                <option>${localeString}</option>
-            </c:otherwise>
-        </c:choose>
-    </c:when>
-    <c:otherwise>
-        <option>${localeString}</option>
-    </c:otherwise>
-</c:choose>
-</c:forEach>
-</select>
-<input type="submit" name="Submit" value="Get Date">
-</form>
-
-<c:if test="${selectedFlag}" >
-    <jsp:setProperty name="locales"
-        property="selectedLocaleString"
-        value="${selectedLocaleString}" />
-    <jsp:useBean id="date" class="mypkg.MyDate"/>
-    <jsp:setProperty name="date" property="locale"
-        value="${locales.selectedLocale}"/>
-    <b>Date: </b>${date.date}</c:if>
+if(str.equals("add"))
+  k=i+j;
+if(str.equals("mul"))
+  k=i*j;
+if(str.equals("div"))
+  k=i/j;
+%>
+Result is <%=k%>
 </body>
 </html>
